@@ -11,3 +11,4 @@ TODO:
 * Grab config dump from the FreeNAS fileserver, store it here
 * Upload content from in-house webserver
 * Store Cisco Aironet AP config dumps
+* Add config for dnsmasq, /etc/hosts (?) and apache. 
