@@ -1,5 +1,5 @@
-test_cookbook Cookbook
-======================
+davis-tools Cookbook
+====================
 TODO: Enter the cookbook description here.
 
 e.g.
@@ -11,14 +11,14 @@ TODO: List your cookbook requirements. Be sure to include any requirements this 
 
 e.g.
 #### packages
-- `toaster` - test_cookbook needs toaster to brown your bagel.
+- `toaster` - davis-tools needs toaster to brown your bagel.
 
 Attributes
 ----------
 TODO: List your cookbook attributes here.
 
 e.g.
-#### test_cookbook::default
+#### davis-tools::default
 <table>
   <tr>
     <th>Key</th>
@@ -27,7 +27,7 @@ e.g.
     <th>Default</th>
   </tr>
   <tr>
-    <td><tt>['test_cookbook']['bacon']</tt></td>
+    <td><tt>['davis-tools']['bacon']</tt></td>
     <td>Boolean</td>
     <td>whether to include bacon</td>
     <td><tt>true</tt></td>
@@ -36,17 +36,17 @@ e.g.
 
 Usage
 -----
-#### test_cookbook::default
+#### davis-tools::default
 TODO: Write usage instructions for each cookbook.
 
 e.g.
-Just include `test_cookbook` in your node's `run_list`:
+Just include `davis-tools` in your node's `run_list`:
 
 ```json
 {
   "name":"my_node",
   "run_list": [
-    "recipe[test_cookbook]"
+    "recipe[davis-tools]"
   ]
 }
 ```

@@ -3,9 +3,11 @@ default[:dnsmasq][:dhcp] = {}
 default[:dnsmasq][:dhcp_options] = []
 default[:dnsmasq][:enable_dns] = true
 default[:dnsmasq][:dns] = {
-  'no-poll' => nil,
-  'no-resolv' => nil,
-  'server' => '127.0.0.1'
+  'bogus-priv' => nil,
+  'domain-needed' => nil,
+  'local' => '/davis.house/',
+  'interface' => 'eth1',
+  'domain' => 'davis.house',
 }
 default[:dnsmasq][:dns_options] = []
 default[:dnsmasq][:managed_hosts] = {}
