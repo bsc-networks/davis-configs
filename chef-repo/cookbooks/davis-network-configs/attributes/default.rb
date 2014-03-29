@@ -22,7 +22,7 @@ default[:'davis-network-configs'][:nics] = {
     }
   },
   # test_node is temporary and for dev purposes
-  "test_node" => {
+  "pudge" => {
     "eth0" => { 
       "DEVICE" => "eth0",
       "HWADDR" => "08:00:27:84:F7:CD",
