@@ -15,13 +15,13 @@
 # For each NIC listed in the attributes,
 # setup the file at /etc/sysconfig/network-scripts/ifcfg-NIC_NAME
 # as per the settings listed in the NIC's attributes hash
-node[:nics].keys.each do |nic|
+node[:'davis-network-configs'][:nics][Chef::Config[:node_name]].keys.each do |nic|
   template "/etc/sysconfig/network-scripts/ifcfg-#{nic}" do
     source "ifcfg.erb"
     owner "root"
     group "root"
     mode "644"
-    variables(:settings => node[:nics][nic])
+    variables(:settings => node[:'davis-network-configs'][:nics][Chef::Config[:node_name]][nic])
   end
 end
   
