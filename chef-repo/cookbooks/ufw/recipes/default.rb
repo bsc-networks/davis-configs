@@ -34,7 +34,7 @@ else
   node.set['firewall']['state'] = new_state
 
   #drop rules and re-enable
-  execute "ufw --force reset"
+  execute "ufw enable; ufw disable"
 
   firewall "ufw" do
     action :enable
