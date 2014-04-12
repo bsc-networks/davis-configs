@@ -17,6 +17,18 @@ Attributes
 ----------
 None at the moment.
 
+There should be a data bag named 'davis-website' and an item named 'passwords'. This JSON will contain 3 mappings: 
+
+```
+"nyt": "NYT_PASSWORD",
+"netflix": "NETFLIX_PASSWORD",
+"hulu": "HULU_PASSWORD",
+```
+
+This item is encrypted and the key should be transfered when changing Network Managers.  If this transfer of keys does not happen, you will need to reconstruct the JSON using a new encryption key.
+
+See this documentation: http://docs.opscode.com/essentials_data_bags.html#encrypt-a-data-bag-item
+
 Usage
 -----
 Add davis-website::default to the run list.

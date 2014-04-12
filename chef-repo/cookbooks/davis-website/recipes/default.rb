@@ -15,3 +15,17 @@ remote_directory "/var/www/html" do
   group "root"
   source "/website"
 end
+
+acct_passwords = data_bag("davis-website", "passwords")
+
+template "/var/www/html/important_info.html" do
+  source "important_info.html.erb"
+  mode "0644"
+  owner "root"
+  group "root"
+  variables({
+      :netflix_pw => acct_passwords["netflix"],
+      :nyt_pw => acct_passwords["nyt"],
+      :hulu_pw => acct_passwords["hulu"]
+  })
+end
