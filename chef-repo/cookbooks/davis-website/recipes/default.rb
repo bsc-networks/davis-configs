@@ -7,16 +7,25 @@
 # All rights reserved - Do Not Redistribute
 #
 
-remote_directory "/var/www/html" do
-  files_mode "0644"
-  files_owner "root"
-  mode "0644"
-  owner "root"
-  group "root"
-  source "/website"
+web_app "davis.house" do
+  server_name "davis-architect"
+  server_aliases ["davis.house", "www.davis.house"]
+  docroot "/var/www/html"
+  enable true
 end
 
-acct_passwords = data_bag("davis-website", "passwords")
+remote_directory "/var/www/html" do
+  files_mode "0755"
+  files_owner "root"
+  mode "0755"
+  owner "root"
+  group "root"
+  source "website"
+end
+
+pw_key = Chef::EncryptedDataBagItem.load_secret("/etc/chef/data_bag_keys/davis_passwords")
+acct_passwords = Chef::EncryptedDataBagItem.load("davis-website", "passwords", pw_key)
+
 
 template "/var/www/html/important_info.html" do
   source "important_info.html.erb"

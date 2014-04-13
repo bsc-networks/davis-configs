@@ -1,0 +1,7 @@
+<VirtualHost *:80>
+    ServerName <%= @params[:server_name] %>
+    <% @params[:server_aliases].each do |a| -%>
+    ServerAlias <%= a %>
+    <% end -%>
+    DocumentRoot <%= @params[:docroot] %>
+</VirtualHost>
