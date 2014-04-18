@@ -18,7 +18,8 @@ default[:'davis-network-configs'][:nics] = {
       "NM_CONTROLLED" => "yes",
       "BOOTPROTO" => "static",
       "IPADDR" => "192.168.0.1",
-      "GATEWAY" => "10.0.0.1"
+      "GATEWAY" => "10.0.0.1",
+      "NETMASK" => "255.255.254.0"
     }
   },
   # test_node is temporary and for dev purposes
