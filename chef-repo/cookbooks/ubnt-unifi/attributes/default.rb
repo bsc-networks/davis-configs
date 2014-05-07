@@ -1,7 +1,7 @@
 # Encoding: UTF-8
 
 # => Specify Unifi package to install
-default['unifi']['package'] = 'unifi'
+default['unifi']['package'] = 'unifi-beta'
 
 # => Guest Access Mode (pass/off)
 # => When set to pass, guest networks stay online if controller inaccessible
@@ -15,7 +15,7 @@ default['unifi']['config']['dir'] = '/usr/lib/unifi/data/'
 default['unifi']['ufw']['managed'] = true
 
 # => Unifi Port Configuration (Don't Touch!)
-default['unifi']['port']['web_gui'] = '8443'
+default['unifi']['port']['web_gui'] = '443'
 default['unifi']['port']['guest_http'] = '8880'
 default['unifi']['port']['guest_https'] = '8843'
 default['unifi']['port']['mgmt'] = '8080..8081'
