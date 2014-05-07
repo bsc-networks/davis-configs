@@ -5,6 +5,8 @@ default[:dhcp][:allows] = ['bootp']
 
 # these are the arrays that dispatch to bags or attributes for actual data
 default[:dhcp][:hosts] = ["nherson",
+                          "file-server",
+                          "tinker", # the unifi-controller
                           "unifi-ap1",
                           "unifi-ap2",
                           "unifi-ap3",
