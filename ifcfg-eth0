@@ -1,8 +1,0 @@
-#located in /etc/sysconfig/network-scripts
-DEVICE=eth0
-HWADDR=00:24:8C:8C:4C:3F
-TYPE=Ethernet
-UUID=609ed134-c2ea-4871-9baa-7c840201e029
-ONBOOT=yes
-NM_CONTROLLED=yes
-BOOTPROTO=dhcp

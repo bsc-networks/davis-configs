@@ -4,7 +4,13 @@ default[:dhcp][:failover] = nil
 default[:dhcp][:allows] = ['bootp']
 
 # these are the arrays that dispatch to bags or attributes for actual data
-default[:dhcp][:hosts] = ["unifi-ap5"]
+default[:dhcp][:hosts] = ["nherson",
+                          "unifi-ap1",
+                          "unifi-ap2",
+                          "unifi-ap3",
+                          "unifi-ap4",
+                          "unifi-ap5"
+                         ]
 default[:dhcp][:groups] = []
 default[:dhcp][:networks] = ["192-168-0-0_23"]
 default[:dhcp][:interfaces] = ["eth1"]
