@@ -1,4 +1,4 @@
-Davis House Router Configuration
+Davis House Chef Repo
 ===========
 
 Stored here is the Chef repository that manages Davis House Cooperative's servers.
