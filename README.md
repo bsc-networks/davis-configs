@@ -1,12 +1,11 @@
 Davis House Router Configuration
 ===========
 
-Stored here are some config files for the Davis House server.  
+Stored here is the Chef repository that manages Davis House Cooperative's servers.
 
-The Davis House configurations have now been converted to Chef management.  Inside the chef-repo directory is a full chef repository containing configs to get the router running CentOS configured, as well as the server running the UniFi controller configured properly.
+The Chef server is a Hosted Enterprise Chef solution, which is great because it's free for under 5 machines :)
 
-TODO: 
-
-* Clean out the chef repository, deleting unnecessary cruft and rearranging files in a more logical way
-* Add data bags for DHCP hosts for UniFi access points, UniFi controller, FreeNAS file server, and (optionally) public Windows hosts around the house.
+TODO
+- Write documentation for carrying out common tasks through Chef
+- Find out how to 'Chefify' the FreeNAS server. Alternatively, move the FreeNAS server to a different OS
 
