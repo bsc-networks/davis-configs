@@ -1,5 +1,6 @@
 cookbook 'python'
 cookbook 'java'
+cookbook 'postgresql'
 
 # These two because pip packages use them
 cookbook 'mercurial'
