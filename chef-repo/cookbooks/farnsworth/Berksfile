@@ -1,0 +1,6 @@
+cookbook 'python'
+cookbook 'java'
+
+# These two because pip packages use them
+cookbook 'mercurial'
+cookbook 'git'
