@@ -1,21 +1,21 @@
-farnsworth Cookbook
+Farnsworth Cookbook
 ===================
-TODO: Enter the cookbook description here.
+A cookbook to setup Farnsworth, the upcoming house-level BSC website.
 
-e.g.
-This cookbook makes your favorite breakfast sandwich.
+For more information about Farnsworth itself can be found [here](https://github.com/knagra/farnsworth)
+
 
 Requirements
 ------------
-TODO: List your cookbook requirements. Be sure to include any requirements this cookbook has on platforms, libraries, other cookbooks, packages, operating systems, etc.
+This cookbook depends on the following cookbooks:
+- LIST THERE HERE WHEN FINALIZED (with links)
 
 e.g.
 #### packages
 - `toaster` - farnsworth needs toaster to brown your bagel.
 
-Attributes
+Attributes and Data Bags
 ----------
-TODO: List your cookbook attributes here.
 
 e.g.
 #### farnsworth::default
@@ -65,4 +65,6 @@ e.g.
 
 License and Authors
 -------------------
-Authors: TODO: List authors
+Authors: Nicholas Herson
+
+Thanks to Nader Morshed and Karandeep Singh Nagra for developing Farnsworth
