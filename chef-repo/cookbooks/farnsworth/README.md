@@ -96,11 +96,21 @@ An encrypted data bag is needed for use with this cookbook.  The data bag should
   </tr>
 </table>
 
+Installation
+------------
+Running the following commands is the easiest way to install this cookbook at the moment:
+```
+gem install knife-github-cookbooks
+knife cookbook github install bsc-networks/farnsworth-cookbook
+```
+
 Usage
 -----
 #### farnsworth::default
 
-Include `farnsworth` in your node's `run_list`. That should be all!
+Include `farnsworth` in your node's `run_list`.
+
+If this is a fresh install, you will need to manually create an admin site user. To do this, first let the node converge successfully. Then, inside `node[:site_root]/current`, run `./manage.py createsuperuser` and follow the instructions, filling out the information as you choose.
 
 
 TODO
