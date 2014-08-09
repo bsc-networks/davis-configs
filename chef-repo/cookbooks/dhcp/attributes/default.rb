@@ -13,6 +13,10 @@ default[:dhcp][:hosts] = [
                           "unifi-ap4",
                           "unifi-ap5",
                           "unifi-ap6",
+                          "razor", # farnsworth web server
+                          "dazzle", # kitchen computer
+                          "magnus", # Chromecast
+                          "drow", # study room computer
                          ]
 default[:dhcp][:groups] = []
 default[:dhcp][:networks] = ["192-168-0-0_23"]
