@@ -7,7 +7,7 @@
 # All rights reserved - Do Not Redistribute
 #
 
-node[:'davis-network-configs'][:nics][Chef::Config[:node_name]].keys.each do |nic|
+node[:'davis-centos-networking'][:nics][Chef::Config[:node_name]].keys.each do |nic|
   template "/etc/sysconfig/network-scripts/ifcfg-#{nic}" do
     source "ifcfg.erb"
     owner "root"
