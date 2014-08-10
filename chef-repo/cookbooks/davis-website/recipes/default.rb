@@ -7,6 +7,9 @@
 # All rights reserved - Do Not Redistribute
 #
 
+include_recipe 'apache2'
+include_recipe 'apache2::mod_ssl'
+
 web_app "davis.house" do
   server_name "davis.house"
   server_aliases ["www.davis.house"]
