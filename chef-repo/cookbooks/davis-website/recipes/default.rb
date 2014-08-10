@@ -8,8 +8,8 @@
 #
 
 web_app "davis.house" do
-  server_name "davis-architect"
-  server_aliases ["davis.house", "www.davis.house"]
+  server_name "davis.house"
+  server_aliases ["www.davis.house"]
   docroot "/var/www/html"
   enable true
 end

@@ -5,3 +5,15 @@
     <% end -%>
     DocumentRoot <%= @params[:docroot] %>
 </VirtualHost>
+
+<VirtualHost *:443>
+    ServerName <%= @params[:server_name]  %>
+    <% @params[:server_aliases].each do |a| -%>
+    ServerAlias <%= a %>
+    <% end -%>
+    DocumentRoot <%= @params[:docroot] %>
+
+    SSLEngine on
+    SSLCertificateFile /etc/httpd/ssl/server.crt
+    SSLCertificateKeyFile /etc/httpd/ssl/server.key
+</VirtualHost>
