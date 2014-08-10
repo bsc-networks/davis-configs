@@ -1,0 +1,6 @@
+source "https://api.berkshelf.com"
+
+metadata
+
+cookbook 'farnsworth', :git => "https://github.com/bsc-networks/farnsworth-cookbook.git"
+

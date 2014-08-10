@@ -1,0 +1,10 @@
+name             'davis-router'
+maintainer       'YOUR_NAME'
+maintainer_email 'YOUR_EMAIL'
+license          'All rights reserved'
+description      'Installs/Configures davis-router'
+long_description 'Installs/Configures davis-router'
+version          '0.1.1'
+
+depends 'simple_iptables'
+depends 'sysctl'
