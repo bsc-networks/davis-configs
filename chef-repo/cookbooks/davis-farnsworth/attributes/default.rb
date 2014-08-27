@@ -20,3 +20,6 @@ default[:farnsworth][:ssl_key_file] = '/etc/httpd/ssl/server.key'
 default[:farnsworth][:key_path] = '/etc/chef/data_bag_keys/farnsworth_private.key'
 #
 default[:farnsworth][:site_root] = '/usr/local/farnsworth'
+
+# Special to Davis House's needs
+default[:sysctl][:kernel][:shmmax] = 3000000

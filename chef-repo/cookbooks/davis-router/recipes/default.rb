@@ -26,6 +26,13 @@ end
 # these rules go into a custom chain called 'system'
 # which INPUT jumps to
 
+# Loopback is accepted
+simple_iptables_rule "local" do
+  chain "system"
+  rule "-i lo"
+  jump "ACCEPT"
+end
+
 # Internal INPUT is accepted
 simple_iptables_rule "internal" do
   chain "system"
