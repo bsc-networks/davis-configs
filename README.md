@@ -8,4 +8,5 @@ The Chef server is a Hosted Enterprise Chef solution, which is great because it'
 TODO
 - Write documentation for carrying out common tasks through Chef
 - Find out how to 'Chefify' the FreeNAS server. Alternatively, move the FreeNAS server to a different OS
+- Move UniFi Chef setup to the new chef stuffs
 
