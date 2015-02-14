@@ -8,7 +8,7 @@ GRAPH
     iptables (>= 0.0.0)
     logrotate (>= 0.0.0)
     pacman (>= 0.0.0)
-  davis-website (1.2.0)
+  davis-website (1.2.1)
     apache2 (>= 0.0.0)
   iptables (0.13.2)
   logrotate (1.6.0)
