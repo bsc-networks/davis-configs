@@ -17,9 +17,9 @@ default[:'davis-centos-networking'][:nics] = {
       "ONBOOT" => "yes",
       "NM_CONTROLLED" => "yes",
       "BOOTPROTO" => "static",
-      "IPADDR" => "192.168.0.1",
+      "IPADDR" => "10.20.48.1",
       "GATEWAY" => "10.0.0.1",
-      "NETMASK" => "255.255.254.0"
+      "NETMASK" => "255.255.252.0"
     }
   }
 }

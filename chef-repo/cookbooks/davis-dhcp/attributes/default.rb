@@ -19,7 +19,8 @@ default[:dhcp][:hosts] = [
                           "drow", # study room computer
                          ]
 default[:dhcp][:groups] = []
-default[:dhcp][:networks] = ["192-168-0-0_23"]
+#default[:dhcp][:networks] = ["192-168-0-0_23"]
+default[:dhcp][:networks] = ["10-20-48-0_22"]
 default[:dhcp][:interfaces] = ["eth1"]
 
 # turn bag support on/off
@@ -48,7 +49,7 @@ default[:dhcp][:parameters][:ignore] = "client-updates"
 #default[:dhcp][:parameters][:"filename"] = '"pxelinux.0"'
 
 default[:dhcp][:options][:'domain-name'] = "\"davis.house\""
-default[:dhcp][:options][:'domain-name-servers'] = '192.168.0.1, 8.8.8.8'
+default[:dhcp][:options][:'domain-name-servers'] = '10.20.48.1, 8.8.8.8'
 default[:dhcp][:options][:'time-offset'] = "-28800"
 #default[:dhcp][:options][:'host-name'] = " = binary-to-ascii (16, 8, \"-\", substring (hardware, 1, 6))"
 

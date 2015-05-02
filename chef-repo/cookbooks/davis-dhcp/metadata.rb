@@ -1,10 +1,10 @@
 name             'davis-dhcp'
-maintainer       'YOUR_NAME'
-maintainer_email 'YOUR_EMAIL'
+maintainer       'Davis Network Manager'
+maintainer_email 'davnm@bsc.coop'
 license          'All rights reserved'
 description      'Installs/Configures davis-dhcp'
 long_description 'Installs/Configures davis-dhcp'
-version          '0.1.0'
+version          '0.2.0'
 
 depends 'dhcp'
 
