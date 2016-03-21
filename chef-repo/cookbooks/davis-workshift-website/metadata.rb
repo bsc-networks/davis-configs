@@ -6,4 +6,6 @@ description      'Installs/Configures davis-workshift-website'
 long_description 'Installs/Configures davis-workshift-website'
 version          '0.1.0'
 
-depends 'bsc_scheduler'
+#trying to use this without the bsc_scheduler
+
+#depends 'bsc_scheduler'

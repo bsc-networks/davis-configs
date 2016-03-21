@@ -7,4 +7,7 @@
 # All rights reserved - Do Not Redistribute
 #
 
-include_recipe 'bsc_scheduler'
+#The bsc_scheduler bundle install was giving chef + rvm hell, and the website didn't work anyways.
+#So I'm trying a new thing where we don't use it. 
+
+#include_recipe 'bsc_scheduler'
