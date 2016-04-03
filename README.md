@@ -9,9 +9,9 @@ If you're a network manager/sysadmin, welcome!
 
 Chef uses **cookbooks**, which rely on **recipes**, to ensure that your server always gets your order (network configuration) right!
 
-Our server is a Chef *client*. To update it according to the stored cookbooks, use `chef-client`.
+Our server, a CentOS machine in the network closet, is a Chef *client*. To update it according to the stored cookbooks, use `chef-client`.
 
-You can use a tool called `knife` to make changes to the cookbooks stored on our Chef *server*.
+You can use a tool called `knife` to make changes to the cookbooks stored on our remote Chef *server*.
 
 Chef has great tutorials! Check out https://learn.chef.io to learn more about how to use Chef. 
 
