@@ -16,7 +16,5 @@ You can use a tool called `knife` to make changes to the cookbooks stored on our
 Chef has great tutorials! Check out https://learn.chef.io to learn more about how to use Chef. 
 
 TODO
-- Write documentation for carrying out common tasks through Chef
 - Find out how to 'Chefify' the FreeNAS server. Alternatively, move the FreeNAS server to a different OS
 - Move UniFi Chef setup to the new chef stuffs
-
