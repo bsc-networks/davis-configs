@@ -7,7 +7,7 @@ The Chef server is a Hosted Enterprise Chef solution which is free for under 5 m
 
 If you're a network manager/sysadmin, welcome!
 
-Chef uses **cookbooks**, which rely on **recipes**, to ensure that your server always gets your orders(network configuration) right!
+Chef uses **cookbooks**, which rely on **recipes**, to ensure that your server always gets your order (network configuration) right!
 
 Our server is a Chef *client*. To update it according to the stored cookbooks, use `chef-client`.
 
