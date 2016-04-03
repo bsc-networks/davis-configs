@@ -13,7 +13,7 @@ html,body
 {
   overflow:auto;
   padding-bottom:150px; /* this needs to be bigger than footer height*/
-  padding-top:10px; /* provides space between navbar and text on info page, doesn't interfere with other pages so OK/*
+  padding-top:10px; /* provides space between navbar and text on info page, doesn't interfere with other pages so OK*/
 }
                  
 .footer
