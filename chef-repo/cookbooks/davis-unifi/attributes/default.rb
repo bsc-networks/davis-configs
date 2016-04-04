@@ -1,1 +1,1 @@
-default['unifi']['package'] = 'unifi-rapid'
+default['unifi']['package'] = 'unifi'
