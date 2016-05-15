@@ -1,11 +1,12 @@
 Davis House Chef Repo
 ===========
 
+If you're a network manager/sysadmin, welcome!
+
 Stored here is the Chef repository that manages Davis House Cooperative's servers.
 
-The Chef server is a Hosted Enterprise Chef solution which is free for under 5 machines.
-
-If you're a network manager/sysadmin, welcome!
+The Chef server is a Hosted Enterprise Chef solution which is free for under 5 machines. It allows you to maintain and update a server remotely,
+safely, and (relatively) simply.
 
 Chef uses **cookbooks**, which rely on **recipes**, to ensure that your server always gets your order (network configuration) right!
 
@@ -28,6 +29,8 @@ You would want to:
 * ssh to our web server and `sudo chef-client`
 
 And you're done! 
+
+More info can be found on https://learn.chef.io/tutorials/
 
 TODO
 - Find out how to 'Chefify' the FreeNAS server. Alternatively, move the FreeNAS server to a different OS
